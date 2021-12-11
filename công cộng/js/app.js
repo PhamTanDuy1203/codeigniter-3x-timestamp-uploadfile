@@ -52,8 +52,8 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $ti
 	
     $scope.citys = [
         'TP.Rạch Giá',
-        'H.Hòn Đất'
-        'H.Kiên Lương'
+        'H.Hòn Đất',
+        'H.Kiên Lương',
     ];
 
     $scope.updateCity = function () {
@@ -70,7 +70,7 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $ti
         if(index == 1){
             $scope.stores = [
                 'Hòn đất 1',
-                'Hòn đất 2
+                'Hòn đất 2',
             ];
         }
         if(index == 2){
