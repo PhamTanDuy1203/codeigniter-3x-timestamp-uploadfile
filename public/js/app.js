@@ -53,9 +53,11 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $ti
     $scope.citys = [
         'TP.Rạch Giá',
         'TP.Hà Tiên',
+        'H.Hòn Đất',
     ];
 
-    $scope.updateCity = function () {
+    $scope.updateCity = function () 
+   {
         let index = $scope.citys.indexOf($scope.selected_city);
         $scope.selected_store = null;
         $scope.stores = [];
@@ -64,20 +66,7 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $ti
             $scope.stores = [
                 '95 Nguyễn Trung Trực',
                 '96 Nguyễn Thoại Hầu',
-                '186-188 Nguyễn Hùng Sơn',
-                '37 Đường 3/2',
-                '79 Quang Trung',
-                '208 Nguyễn Bỉnh Khiêm',
-                '07-07A Nguyễn Bỉnh Khiêm',
-                'L7-06 Huỳnh Thúc Kháng',		
-                '6 Mai Thị Hồng Hạnh',
-                'F14-30 Đường 3/2',
-                'D4-25 Đường 3/2',
-                '327 Nguyễn Trung Trực',
-                '428 Ngô Quyền',
-                '21 Nguyễn Văn Cừ',
-                '706 Nguyễn Trung Trực',
-                '14 Trần Quang Khải',	
+                '186-188 Nguyễn Hùng Sơn',	
             ];
         }
         if(index == 1){
@@ -85,6 +74,12 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $ti
                 '95 Hóc Môn',
             ];
         }
+        if(index == 2){
+            $scope.stores = [
+                'Hòn Đất',
+            ];
+        }
+
     }
 
 	var get_list_file = function () {
