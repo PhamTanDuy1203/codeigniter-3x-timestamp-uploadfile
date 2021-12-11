@@ -51,8 +51,8 @@ Array.prototype.removeByValue = function () {
 app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
 	
     $scope.citys = [
-        'Thành phố Rạch Giá',
-        'Hồ Chí Minh'
+        'TP.Rạch Giá',
+        'TP.Hà Tiên',
     ];
 
     $scope.updateCity = function () {
