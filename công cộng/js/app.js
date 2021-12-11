@@ -51,8 +51,13 @@ Array.prototype.removeByValue = function () {
 app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $timeout, $http) {
 	
     $scope.citys = [
-        'Thành phố Rạch Giá',
-        'Hồ Chí Minh'
+        'TP.Rạch Giá',
+        'TP.Hà Tiên',
+        'H.Hòn Đất',
+        'H.Kiên Lương',
+        'H.Châu Thành',
+        'H.Giồng Riềng',
+        'H.Gò Quao',
     ];
 
     $scope.updateCity = function () {
@@ -62,22 +67,11 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $ti
         
         if(index == 0){
             $scope.stores = [
-                '95 Nguyễn Trung Trực',
-                '96 Nguyễn Thoại Hầu',
+                'BHX 94 Quang Trung',
+                'BHX 219 Nguyễn Bĩnh Khiêm',
                 '186-188 Nguyễn Hùng Sơn',
                 '37 Đường 3/2',
                 '79 Quang Trung',
-                '208 Nguyễn Bỉnh Khiêm',
-                '07-07A Nguyễn Bỉnh Khiêm',
-                'L7-06 Huỳnh Thúc Kháng',		
-                '6 Mai Thị Hồng Hạnh',
-                'F14-30 Đường 3/2',
-                'D4-25 Đường 3/2',
-                '327 Nguyễn Trung Trực',
-                '428 Ngô Quyền',
-                '21 Nguyễn Văn Cừ',
-                '706 Nguyễn Trung Trực',
-                '14 Trần Quang Khải',	
             ];
         }
         if(index == 1){
