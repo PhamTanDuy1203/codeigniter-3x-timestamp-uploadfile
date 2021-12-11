@@ -63,16 +63,19 @@ app.controller('MainCtrl', ['$scope', '$timeout', '$http', function ($scope, $ti
         
         if(index == 0){
             $scope.stores = [
-                '95 Nguyễn Trung Trực',
-                '96 Nguyễn Thoại Hầu',
-                '186-188 Nguyễn Hùng Sơn',
-                '37 Đường 3/2',
-                '79 Quang Trung',
+                'Rạch giá 2',
+                'Rạch giá 1',
             ];
         }
         if(index == 1){
             $scope.stores = [
-                '95 Hóc Môn',
+                'Hòn đất 1',
+                'Hòn đất 2
+            ];
+        }
+        if(index == 2){
+            $scope.stores = [
+                '01 kiên lương',
             ];
         }
     }
